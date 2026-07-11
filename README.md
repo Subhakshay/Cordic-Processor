@@ -1,8 +1,5 @@
 # FPGA Implementation of a Fast and Area-Efficient CORDIC Processor for Real-Time Trigonometric Computation
 
-**Author:** Sai Surya Subhakshay Vemparala
-**ID:** 2023AAPS0231H
-**Batch:** P1
 **Board:** Digilent ZedBoard (Xilinx Zynq-7000, xc7z020clg484-1)
 
 ---
@@ -58,10 +55,7 @@ The accumulated **CORDIC gain** `K = ∏ √(1 + 2^(−2i)) ≈ 1.6468` is pre-c
 
 ## 3. System Architecture
 
->
-> ```markdown
 > ![Block Diagram](images/block_diagram.png)
-> ```
 
 ### 3.1 Pre-rotation Stage
 Extends the natural CORDIC convergence range of `[−π/2, +π/2]`. The initial `X` value is set to `1/K = 0.6073` (stored as `19898` in Q1.15 format) to pre-compensate the accumulating gain.
@@ -141,9 +135,7 @@ Four test angles were injected via `probe_out0`, `valid` pulsed, and outputs rea
 
 **Hardware Pass Rate: 4/4 (100%)**
 
-> ```markdown
 > ![Output Waveform](images/waveform.png)
-> ```
 
 ### 6.2 Performance Summary
 
