@@ -58,7 +58,6 @@ The accumulated **CORDIC gain** `K = ∏ √(1 + 2^(−2i)) ≈ 1.6468` is pre-c
 
 ## 3. System Architecture
 
-> 📌 **Insert the overall block diagram screenshot here** (Vivado schematic showing `vio_inst`, `cordic_top`/`dut`, and the `RTL_OR` gate combining VIO valid and button valid — see `Schematic (2)` in the Vivado project).
 >
 > ```markdown
 > ![Block Diagram](images/block_diagram.png)
@@ -142,10 +141,8 @@ Four test angles were injected via `probe_out0`, `valid` pulsed, and outputs rea
 
 **Hardware Pass Rate: 4/4 (100%)**
 
->  **Insert the output/waveform graph here** (e.g. the Vivado simulation waveform showing the 17-cycle pipeline latency, or a plotted cos/sin output curve).
->
 > ```markdown
-> ![Output Waveform](images/output_waveform.png)
+> ![Output Waveform](images/waveform.png)
 > ```
 
 ### 6.2 Performance Summary
